@@ -16,9 +16,9 @@
 @font-face {
   font-family: 'Outfit';
   src:
-    url("/assets/fonts/outfit-vf.woff2"),
-    url("/assets/fonts/outfiy-vf.woff"),
-    url("/assets/fonts/outfiy-vf.ttf");
+    url("./assets/fonts/outfit-vf.woff2"),
+    url("./assets/fonts/outfiy-vf.woff"),
+    url("./assets/fonts/outfiy-vf.ttf");
   font-display: swap;
 }
 
@@ -26,9 +26,9 @@
   font-family: 'Young Serif';
   font-weight: 400;
   src:
-    url("/assets/fonts/young-serif-regular.woff2"),
-    url("/assets/fonts/young-serif-regular.woff"),
-    url("/assets/fonts/young-serif-regular.ttf");
+    url("./assets/fonts/young-serif-regular.woff2"),
+    url("./assets/fonts/young-serif-regular.woff"),
+    url("./assets/fonts/young-serif-regular.ttf");
   font-display: swap;
 }
 
