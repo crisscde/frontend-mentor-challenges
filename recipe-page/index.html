@@ -17,7 +17,7 @@
             class="recipe__image"
           >
         </figure>
-      <header class="recipe__header">
+      <header class="recipe__section recipe__section--header">
         <h1 class="recipe__title">Simple Omelette Recipe</h1>
         <p class="recipe__description">
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection,
@@ -25,22 +25,35 @@
         </p>
       </header>
 
-      <section class="recipe__preparation">
-        <h2 class="recipe__subtitle ">Preparation time</h2>
-        <ul class="recipe__list ">
-          <li class="recipe__item">
-            <span>Total:</span> Approximately 10 minutes
+      <section class="recipe__section recipe__section--preparation">
+        <h2 class="recipe__subtitle recipe__subtitle--preparation">Preparation time</h2>
+        <ul class="recipe__list recipe__list--preparation">
+          <li class="recipe__item recipe__item--preparation">
+            <span class="recipe__item-point">•</span>
+            <div class="recipe__item-content">
+              <span>Total:</span> Approximately 10 minutes
+            </div>
           </li>
-          <li class="recipe__item">
-            <span>Preparation:</span> 5 minutes
+          <li class="recipe__item recipe__item--preparation">
+            <span class="recipe__item-point">
+              •
+            </span>
+            <div class="recipe__item--content"">
+              <span>Preparation:</span> 5 minutes
+            </div>
           </li>
-          <li class="recipe__item">
-            <span>Cooking:</span> 5 minutes
+          <li class="recipe__item recipe__item--preparation">
+            <span class="recipe__item-point">
+              •
+            </span>
+            <div class="recipe__item--content">
+              <span>Cooking:</span> 5 minutes
+            </div>
           </li>
         </ul>
       </section>
 
-      <section class="recipe__ingredients">
+      <section class="recipe__section recipe__section--ingredients">
         <h2 class="recipe__subtitle">Ingredients</h2>
         <ul class="recipe__list recipe__list--unordered">
           <li class="recipe__item">2-3 large eggs</li>
@@ -50,32 +63,26 @@
           <li class="recipe__item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
       </section>
+      
+      <hr>
 
-      <section class="recipe__instructions">
+      <section class="recipe__section recipe__section--instructions">
         <h2 class="recipe__subtitle">Instructions</h2>
-        <ol class="recipe__list ">
+        <ol class="recipe__list recipe__list--ordered">
           <li class="recipe__item">
-            <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well
-            mixed. You can add
-            a tablespoon of water or milk for a fluffier texture.
+            <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
           </li>
           <li class="recipe__item">
             <strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.
           </li>
           <li class="recipe__item">
-            <strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
-            ensure the eggs
-            evenly coat the surface.
+            <strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
           </li>
           <li class="recipe__item">
-            <strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny
-            in the middle,
-            sprinkle your chosen fillings over one half of the omelette.
+            <strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
           </li>
           <li class="recipe__item">
-            <strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over
-            the fillings. Let
-            it cook for another minute, then slide it onto a plate.
+            <strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
           </li>
           <li class="recipe__item">
             <strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
@@ -83,7 +90,9 @@
         </ol>
       </section>
 
-      <section class="recipe__nutrition">
+      <hr>
+      
+      <section class="recipe__section recipe__section--nutrition">
         <h2 class="recipe__subtitle">Nutrition</h2>
         <p class="recipe__description">The table below shows nutritional values per serving without the additional
           fillings.</p>
@@ -91,8 +100,8 @@
         <table class="recipe__table">
           <tbody class="recipe__tbody">
             <tr class="recipe__row">
-              <td class="recipe__cell ">Calories</td>
-              <td class="recipe__cell ">277kcal</td>
+              <td class="recipe__cell recipe__cell--name">Calories</td>
+              <td class="recipe__cell recipe__cell--value">277kcal</td>
             </tr>
             <tr class="recipe__row">
               <td class="recipe__cell recipe__cell--name">Carbs</td>

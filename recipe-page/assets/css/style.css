@@ -8,6 +8,8 @@
   --brown-800: hsl(14 45% 36%);
   --rose-800: hsl(332 51% 32%);
   --rose-50: hsl(330 100% 98%);
+  --sans-fallback: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+  --serif-fallback: 'Young Serif' ,'Times New Roman', Times, serif;
 }
 
 /* MARK: Fonts */
@@ -24,9 +26,9 @@
   font-family: 'Young Serif';
   font-weight: 400;
   src:
-    url("./assets/fonts/young-serif-regular.woff2"),
-    url("./assets/fonts/young-serif-regular.woff"),
-    url("./assets/fonts/young-serif-regular.ttf");
+    url("/assets/fonts/young-serif-regular.woff2"),
+    url("/assets/fonts/young-serif-regular.woff"),
+    url("/assets/fonts/young-serif-regular.ttf");
   font-display: swap;
 }
 
@@ -38,22 +40,138 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   line-height: 1.5;
-  font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, Cantarell, sans-serif;
-  font-size: 1rem;
+  font-family: var(--sans-fallback);
+  font-size: 1lh;
 }
 
 p {
   text-wrap: pretty;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-  text-wrap: balance;
-}
-
 img {
   max-width: 100%;
   display: block;
 }
+
+
+.recipe {
+  width: 100%; 
+}
+
+
+.recipe__section {
+  width: 84dvw;
+  margin: 2.5rem auto;
+}
+
+.recipe__title {
+  font-family: var(--serif-fallback);
+  line-height: 1;
+  margin-block-end: 1.5rem;
+  color: var(--stone-900);
+  font-size: 1.3lh;
+}
+
+.recipe__description {
+  color: var(--stone-600);
+}
+
+.recipe__preparation {
+  background-color: var(--rose-50);
+  margin: 0 auto;
+}
+
+.recipe__subtitle {
+  font-size: 1lh;
+  color: var(--brown-800);
+  font-family: var(--serif-fallback);
+  margin-block-end: 1rem;  
+}
+
+.recipe__subtitle--preparation {
+  font-size: .7lh;
+  font-family: var(--sans-fallback);
+  color: var(--rose-800);
+}
+  
+.recipe__section--preparation {
+  background-color: var(--rose-50);
+  padding: 1rem 2rem;
+}
+
+.recipe__list {
+  margin-inline-start: 1.2rem;
+}
+
+.recipe__list--preparation {
+  list-style: none;
+  margin-inline-start: .5rem;
+}
+
+.recipe__item {
+  padding-inline-start: 1rem;
+  margin-block-end: .5rem;
+}
+
+.recipe__item--preparation {
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+  margin-block-end: 0;
+  & .recipe__item-point {
+    font-size: .8lh;
+    color: var(--rose-800);
+    padding-inline-end: 1rem;
+  }
+}
+
+span {
+  font-weight: bold;
+}
+
+.recipe__item::marker {
+  color: var(--brown-800);
+}
+
+.recipe__list--ordered .recipe__item::marker {
+  font-size: .6lh;
+  font-weight: bold;
+}
+
+.recipe__table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.recipe__row {
+  border-bottom: .1rem solid var(--stone-150);
+}
+.recipe__cell {
+  padding-block: .5rem;
+}
+
+.recipe__cell--name {
+  color: var(--stone-600);
+  padding-inline-start: 1.5rem;
+}
+
+.recipe__cell--value {
+  color: var(--rose-800);
+  font-weight: 800;
+  padding-inline-end: 1.5rem;
+}
+
+hr {
+  display: block;
+  width: 84%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--stone-150);
+  margin: 0 auto;
+  padding: 0;
+}
+
+
