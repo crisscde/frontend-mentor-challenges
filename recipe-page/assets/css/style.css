@@ -44,6 +44,7 @@ body {
   line-height: 1.5;
   font-family: var(--sans-fallback);
   font-size: 1lh;
+  background-color: var(--rose-50);
 }
 
 p {
@@ -57,12 +58,18 @@ img {
 
 
 .recipe {
-  width: 100%; 
+  width: clamp(200px, 100dvw, 850px);
+  background-color: var(--white);
+  margin: 0 auto;
 }
 
+.recipe__figure {
+  width: clamp(200px, 100dvw, 750px);
+  margin: 0 auto;
+}
 
 .recipe__section {
-  width: 84dvw;
+  width: clamp(200px, 84dvw, 750px);
   margin: 2.5rem auto;
 }
 
@@ -76,6 +83,7 @@ img {
 
 .recipe__description {
   color: var(--stone-600);
+  margin-block-end: 1rem;
 }
 
 .recipe__preparation {
@@ -99,6 +107,7 @@ img {
 .recipe__section--preparation {
   background-color: var(--rose-50);
   padding: 1rem 2rem;
+  margin: 0 auto;
 }
 
 .recipe__list {
@@ -174,4 +183,15 @@ hr {
   padding: 0;
 }
 
+@media (width > 850px) {
+  .recipe__image {
+    border-radius: 10px;
+  }
+
+  .recipe {
+    padding: 3rem 3rem 2rem;
+    margin: 5rem auto;
+    border-radius: 56px;
+  }
+}
 
